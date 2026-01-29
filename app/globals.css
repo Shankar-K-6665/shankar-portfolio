@@ -1,4 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 :root {
   --background: #ffffff;
@@ -23,4 +32,118 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+/* ===== Custom UI Utilities ===== */
+
+.pill {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  transition: 0.3s;
+}
+
+.pill:hover {
+  background: rgba(56, 189, 248, 0.2);
+}
+
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  background: #38bdf8;
+  color: black;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
+.btn-outline {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.lang-pill {
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
+  font-size: 0.85rem;
+}
+.dots-layer {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.6) 1px,
+    transparent 1px
+  );
+  background-size: 24px 24px;
+  opacity: 0.25;
+  animation: moveDots 60s linear infinite;
+}
+
+@keyframes moveDots {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-200px);
+  }
+}
+
+.pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.pill:hover {
+  background: rgba(56, 189, 248, 0.2);
+  color: #38bdf8;
+}
+
+.btn-primary {
+  padding: 12px 28px;
+  border-radius: 9999px;
+  background: #38bdf8;
+  color: black;
+  font-weight: 600;
+}
+
+.btn-outline {
+  padding: 12px 28px;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+}
+@keyframes dotsMove {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 120px 120px;
+  }
+}
+
+.animate-dots {
+  animation: dotsMove 60s linear infinite;
+}
+spline-viewer::part(logo),
+spline-viewer::part(branding) {
+  display: none !important;
+}
+
+spline-viewer {
+  pointer-events: auto;
+}
+.mask-image-fade {
+  -webkit-mask-image: radial-gradient(circle at center, black 65%, transparent 100%);
+  mask-image: radial-gradient(circle at center, black 65%, transparent 100%);
 }
