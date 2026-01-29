@@ -19,19 +19,16 @@ export default function ParticlesBackground() {
           background: {
             color: "transparent",
           },
+
           interactivity: {
             events: {
               onHover: {
                 enable: true,
-                mode: "bubble",   // bubble effect on hover
+                mode: "bubble",
               },
               onClick: {
                 enable: false,
               },
-              resize: {
-                enable: true,
-              },
-
             },
             modes: {
               bubble: {
@@ -40,41 +37,42 @@ export default function ParticlesBackground() {
                 duration: 2,
                 opacity: 0.8,
               },
-              repulse: {
-                distance: 120,
-                duration: 0.4,
-              },
             },
           },
+
           particles: {
             number: {
               value: 60,
               density: {
                 enable: true,
-                area: 900,
+                value_area: 900, // ✅ FIXED
               },
             },
             color: {
-              value: "#38bdf8", // sky-blue like theme
+              value: "#38bdf8",
             },
             opacity: {
-              value: 0.5,
-              random: { enable: true, minimumValue: 0.3 },
+              value: 0.45,
+              random: {
+                enable: true,
+                minimumValue: 0.3,
+              },
             },
             size: {
               value: { min: 1, max: 3 },
             },
             move: {
               enable: true,
-              speed: 0.5,         // very smooth slow motion
+              speed: 0.5,
               direction: "none",
-              random: true,       // gentle direction randomness
+              random: true,
               straight: false,
               outModes: {
                 default: "out",
               },
             },
           },
+
           detectRetina: true,
         }}
       />
