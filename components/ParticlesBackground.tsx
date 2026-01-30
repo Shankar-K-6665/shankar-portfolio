@@ -19,15 +19,11 @@ export default function ParticlesBackground() {
           background: {
             color: "transparent",
           },
-
           interactivity: {
             events: {
               onHover: {
                 enable: true,
                 mode: "bubble",
-              },
-              onClick: {
-                enable: false,
               },
             },
             modes: {
@@ -39,22 +35,15 @@ export default function ParticlesBackground() {
               },
             },
           },
-
           particles: {
             number: {
               value: 60,
-              density: {
-                enable: true,
-              },
             },
             color: {
               value: "#38bdf8",
             },
             opacity: {
               value: 0.5,
-              random: {
-                enable: true,
-              },
             },
             size: {
               value: { min: 1, max: 3 },
@@ -62,15 +51,12 @@ export default function ParticlesBackground() {
             move: {
               enable: true,
               speed: 0.5,
-              random: {
-                enable: true,
-              },
+              random: true,
               outModes: {
                 default: "out",
               },
             },
           },
-
           detectRetina: true,
         }}
       />
