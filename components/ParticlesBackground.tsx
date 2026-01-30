@@ -2,24 +2,32 @@
 
 import Particles from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
+import { useEffect, useState } from "react";
 import type { Engine } from "@tsparticles/engine";
 
 export default function ParticlesBackground() {
-  const particlesInit = async (engine: Engine) => {
-    await loadSlim(engine);
-  };
+  const [init, setInit] = useState(false);
+
+  useEffect(() => {
+    const initParticles = async () => {
+      const engine = await loadSlim;
+      setInit(true);
+    };
+
+    initParticles();
+  }, []);
+
+  if (!init) return null;
 
   return (
     <div className="absolute inset-0 w-full h-full -z-10">
       <Particles
-        init={particlesInit}
         options={{
           fullScreen: false,
           fpsLimit: 60,
           background: {
             color: "transparent",
           },
-
           interactivity: {
             events: {
               onHover: {
@@ -39,7 +47,6 @@ export default function ParticlesBackground() {
               },
             },
           },
-
           particles: {
             number: {
               value: 60,
@@ -56,7 +63,6 @@ export default function ParticlesBackground() {
                 max: 0.5,
               },
             },
-
             size: {
               value: { min: 1, max: 3 },
             },
@@ -69,7 +75,6 @@ export default function ParticlesBackground() {
               },
             },
           },
-
           detectRetina: true,
         }}
       />
