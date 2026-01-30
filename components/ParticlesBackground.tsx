@@ -52,7 +52,9 @@ export default function ParticlesBackground() {
             },
             opacity: {
               value: 0.5,
-              random: true,
+              random: {
+                enable: true,
+              },
             },
             size: {
               value: { min: 1, max: 3 },
