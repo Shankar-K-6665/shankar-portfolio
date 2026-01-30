@@ -32,7 +32,7 @@ export default function ParticlesBackground() {
             },
             modes: {
               bubble: {
-                distance: 150,
+                distance: 140,
                 size: 3,
                 duration: 2,
                 opacity: 0.8,
@@ -45,18 +45,13 @@ export default function ParticlesBackground() {
               value: 60,
               density: {
                 enable: true,
-                value_area: 900, // ✅ FIXED
               },
             },
             color: {
               value: "#38bdf8",
             },
             opacity: {
-              value: 0.45,
-              random: {
-                enable: true,
-                minimumValue: 0.3,
-              },
+              value: 0.5,
             },
             size: {
               value: { min: 1, max: 3 },
