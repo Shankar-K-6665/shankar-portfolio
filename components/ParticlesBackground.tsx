@@ -29,6 +29,7 @@ export default function ParticlesBackground() {
               onClick: {
                 enable: false,
               },
+              resize: true,
             },
             modes: {
               bubble: {
@@ -52,6 +53,7 @@ export default function ParticlesBackground() {
             },
             opacity: {
               value: 0.5,
+              random: true,
             },
             size: {
               value: { min: 1, max: 3 },
@@ -59,9 +61,7 @@ export default function ParticlesBackground() {
             move: {
               enable: true,
               speed: 0.5,
-              direction: "none",
               random: true,
-              straight: false,
               outModes: {
                 default: "out",
               },
