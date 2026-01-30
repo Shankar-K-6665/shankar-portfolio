@@ -119,7 +119,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                 >
                   <Button size="sm" colorScheme="blue">
-                    GitHub
+                    GitHub 
                   </Button>
                 </a>
 
