@@ -29,7 +29,6 @@ export default function ParticlesBackground() {
               onClick: {
                 enable: false,
               },
-              resize: true,
             },
             modes: {
               bubble: {
