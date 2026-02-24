@@ -109,7 +109,7 @@ export default function Certificates() {
               exit={{ scale: 0.85 }}
               transition={{ duration: 0.3 }}
               className="max-w-4xl w-full"
-              onClick={(e) => e.stopPropagation()}
+              onClick={(e: { stopPropagation: () => unknown; }) => e.stopPropagation()}
             >
               <Image
                 src={selected.image}
