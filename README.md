@@ -2,7 +2,7 @@
 
 A modern, interactive portfolio website built with Next.js, React, and Three.js. Features smooth animations, 3D elements, and a responsive design.
 
-![Portfolio Preview](https://img.shields.io/badge/Next.js-16.1.4-black) ![React-19.2.3](https://img.shields.io/badge/React-19.2.3-61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6)
+![Next.js](https://img.shields.io/badge/Next.js-16.1.4-black) ![React](https://img.shields.io/badge/React-19.2.3-61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6)
 
 ## 🚀 Features
 
@@ -17,7 +17,7 @@ A modern, interactive portfolio website built with Next.js, React, and Three.js.
 
 - **Framework:** Next.js 16.1.4
 - **UI Library:** React 19.2.3
-- **Styling:** Tailwind CSS 4.1
+- **Styling:** Tailwind CSS 4.1, Chakra UI
 - **3D Graphics:** Three.js, React Three Fiber, React Three Drei
 - **Animations:** Framer Motion, Custom reveal animations
 - **Smooth Scroll:** Lenis
@@ -30,10 +30,10 @@ A modern, interactive portfolio website built with Next.js, React, and Three.js.
 ```
 bash
 # Clone the repository
-git clone https://github.com/yourusername/shankar-portfolio.git
+git clone https://github.com/Shankar-K-6665/Shankar-Portfolio.git
 
 # Navigate to the project directory
-cd shankar-portfolio
+cd Shankar-Portfolio
 
 # Install dependencies
 npm install
@@ -47,28 +47,28 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## 🏗️ Project Structure
 
 ```
-shankar-portfolio/
+Shankar-Portfolio/
 ├── app/                    # Next.js app directory
 │   ├── layout.tsx         # Root layout
-│   ├── page.tsx          # Home page
-│   ├── providers.tsx     # React providers
-│   ├── globals.css       # Global styles
-│   └── emotion-cache.tsx # Chakra UI cache
-├── components/           # React components
-│   ├── Hero.tsx         # Hero section
-│   ├── About.tsx        # About section
-│   ├── Skills.tsx       # Skills showcase
-│   ├── Projects.tsx     # Projects portfolio
-│   ├── Certificates.tsx # Certifications
-│   ├── Contact.tsx      # Contact form
-│   ├── Navbar.tsx       # Navigation bar
-│   ├── Footer.tsx       # Footer
+│   ├── page.tsx           # Home page
+│   ├── providers.tsx      # React providers
+│   ├── globals.css        # Global styles
+│   └── emotion-cache.tsx  # Chakra UI cache
+├── components/            # React components
+│   ├── Hero.tsx           # Hero section
+│   ├── About.tsx          # About section
+│   ├── Skills.tsx         # Skills showcase
+│   ├── Projects.tsx       # Projects portfolio
+│   ├── Certificates.tsx  # Certifications
+│   ├── Contact.tsx        # Contact form
+│   ├── Navbar.tsx         # Navigation bar
+│   ├── Footer.tsx         # Footer
 │   └── ...
-├── public/               # Static assets
-│   ├── Certificates/    # Certificate images
-│   ├── images/          # Portfolio images
-│   └── resume/          # Resume PDF
-└── package.json         # Dependencies
+├── public/                # Static assets
+│   ├── Certificates/      # Certificate images
+│   ├── images/            # Portfolio images
+│   └── resume/            # Resume PDF
+└── package.json           # Dependencies
 ```
 
 ## 📄 Resume
@@ -98,4 +98,4 @@ MIT License
 
 ---
 
-Built with ❤️ using Next.js and Three.js
+Built with ❤️ using Next.js, React Three Fiber and Chakra UI
