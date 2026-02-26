@@ -145,12 +145,18 @@ export default function Hero() {
     </div>
 
     {/* Buttons */}
-    <div className="mt-8 flex gap-4 justify-center">
+    <div className="mt-8 flex gap-4 justify-center flex-wrap">
       <a href="#projects" className="btn-primary">
         View Projects
       </a>
       <a
-        href="/resume/Shankar_K_Resume.pdf"
+        href="#contact"
+        className="btn-primary bg-transparent border border-sky-400 text-sky-400 hover:bg-sky-400/10"
+      >
+        Contact Me
+      </a>
+      <a
+        href="/resume/Resume.pdf"
         download
         className="btn-outline flex items-center gap-2"
       >

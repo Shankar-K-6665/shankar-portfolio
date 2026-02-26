@@ -98,8 +98,9 @@ export default function Contact() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              action="https://formspree.io/f/YOUR_FORM_ID"
+              action="mailto:shankaraiml6665@gmail.com?subject=Portfolio Contact Form"
               method="POST"
+              encType="text/plain"
               onSubmit={() => setSubmitted(true)}
               className="
                 rounded-2xl border border-sky-400/20
