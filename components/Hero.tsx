@@ -156,7 +156,7 @@ export default function Hero() {
         Contact Me
       </a>
       <a
-        href="/resume/Shankar_K_Resume.pdf"
+        href="/resume/Resume.pdf"
         download
         className="btn-outline flex items-center gap-2"
       >

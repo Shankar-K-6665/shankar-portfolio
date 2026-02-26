@@ -27,7 +27,7 @@ export default function Navbar() {
 
         {/* RIGHT */}
         <a
-          href="/resume/Shankar_K_Resume.pdf"
+          href="/resume/Resume.pdf"
           download
           className="
             px-4 py-2 rounded-lg
