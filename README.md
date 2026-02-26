@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shankar Portfolio
 
-## Getting Started
+A modern, interactive portfolio website built with Next.js, React, and Three.js. Features smooth animations, 3D elements, and a responsive design.
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-16.1.4-black) ![React](https://img.shields.io/badge/React-19.2.3-61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6)
 
-```bash
+## 🚀 Features
+
+- **Smooth Scrolling** - Custom smooth scroll implementation with Lenis
+- **3D Elements** - Interactive Three.js background and animations
+- **Particle Effects** - Beautiful particle backgrounds
+- **Responsive Design** - Fully responsive across all devices
+- **Dark Mode** - Modern dark theme aesthetic
+- **Interactive UI** - Glow cursors, reveal animations, and micro-interactions
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 16.1.4
+- **UI Library:** React 19.2.3
+- **Styling:** Tailwind CSS 4.1, Chakra UI
+- **3D Graphics:** Three.js, React Three Fiber, React Three Drei
+- **Animations:** Framer Motion, Custom reveal animations
+- **Smooth Scroll:** Lenis
+- **Icons:** React Icons
+- **Typewriter:** React Simple Typewriter
+- **State Management:** React Context
+
+## 📦 Installation
+
+```
+bash
+# Clone the repository
+git clone https://github.com/Shankar-K-6665/Shankar-Portfolio.git
+
+# Navigate to the project directory
+cd Shankar-Portfolio
+
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🏗️ Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+Shankar-Portfolio/
+├── app/                    # Next.js app directory
+│   ├── layout.tsx         # Root layout
+│   ├── page.tsx           # Home page
+│   ├── providers.tsx      # React providers
+│   ├── globals.css        # Global styles
+│   └── emotion-cache.tsx  # Chakra UI cache
+├── components/            # React components
+│   ├── Hero.tsx           # Hero section
+│   ├── About.tsx          # About section
+│   ├── Skills.tsx         # Skills showcase
+│   ├── Projects.tsx       # Projects portfolio
+│   ├── Certificates.tsx  # Certifications
+│   ├── Contact.tsx        # Contact form
+│   ├── Navbar.tsx         # Navigation bar
+│   ├── Footer.tsx         # Footer
+│   └── ...
+├── public/                # Static assets
+│   ├── Certificates/      # Certificate images
+│   ├── images/            # Portfolio images
+│   └── resume/            # Resume PDF
+└── package.json           # Dependencies
+```
 
-## Learn More
+## 📄 Resume
 
-To learn more about Next.js, take a look at the following resources:
+The resume is available in `public/resume/Shankar_K_Resume.pdf`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔧 Available Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-## Deploy on Vercel
+## 📱 Responsive Breakpoints
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Mobile: < 640px
+- Tablet: 640px - 1024px
+- Desktop: > 1024px
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🤝 Contributing
+
+Feel free to fork this project and customize it for your own portfolio!
+
+## 📝 License
+
+MIT License
+
+---
+
+Built with ❤️ using Next.js, React Three Fiber and Chakra UI
