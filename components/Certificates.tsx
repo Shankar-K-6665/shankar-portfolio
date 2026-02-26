@@ -12,28 +12,28 @@ type Certificate = {
 const certificates: Certificate[] = [
    {
     title: "JavaScript Essentials 1",
-    image: "/certificates/javascript_certificate.png",
+    image: "/Certificates/javascript_certificate.png",
   },
   {
     title: "Computer Networks And Internet Protocol (NPTEL)",
-    image: "/certificates/cnn_certificate.png",
+    image: "/Certificates/cnn_certificate.png",
   },
     {
     title: "Machine Learning & AI Foundations Course",
-    image: "/certificates/Ml.png",
+    image: "/Certificates/Ml.png",
   },
   
    {
     title: "Data Analyst Internship",
-    image: "/certificates/data_analyst_intern_certificate.png",
+    image: "/Certificates/data_analyst_intern_certificate.png",
   },
   {
     title: "SQL and Relational Databases",
-    image: "/certificates/sql & db_certificate.png",
+    image: "/Certificates/sql & db_certificate.png",
   },
   {
     title: "Machine Learning Internship",
-    image: "/certificates/ml_intern_certificate.png",
+    image: "/Certificates/ml_intern_certificate.png",
   },
 ];
 
