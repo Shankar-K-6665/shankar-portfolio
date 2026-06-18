@@ -79,7 +79,7 @@ The resume is available in `public/resume/Shankar_K_Resume.pdf`
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
-- `npm run start` - Start production server
+- `npm run start` - Start production server 
 - `npm run lint` - Run ESLint
 
 ## 📱 Responsive Breakpoints
